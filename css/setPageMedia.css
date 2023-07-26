@@ -1,0 +1,19 @@
+@media screen and (max-width:670px){
+    #setPage_content {
+        width: 360px;
+    }
+
+    #setPage label {
+        font-size: 20px;
+    }
+
+    #setPage label input {
+        width: 60px;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    #setPage label [type=button] {
+        height: 60px;
+    }
+}

@@ -1,0 +1,6 @@
+@media screen and (max-width:1000px) {
+    #gameBox {
+        width: 95%;
+        height: 60%;
+    }
+}
