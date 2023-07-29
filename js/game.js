@@ -65,8 +65,6 @@ function reRender(array, className1, className2, text = 'only') {
         if (text == 'only') {
             if (arrayIndex != -1) {
                 element.innerText = arrayIndex;
-            } else {
-                element.innerText = '0';
             }
         } else {
             element.innerText = text;
@@ -147,7 +145,7 @@ function gameEnd() {
     }
 }
 
-function testBoxClick(e){
+function testBoxClick(e) {
     if (gameState != 2) {
         // 如果在结算中
         return;
@@ -187,12 +185,12 @@ function gameStartAction() {
     setTimeout(() => {
         gameState = 2;
         // 隐藏测试方块
-        reRender(testList, "box", "box", '0');
+        reRender(testList, "box", "box", '');
         // 记录测试开始时间
         startTime = new Date().getTime();
-        if(isTouchDevice){
+        if (isTouchDevice) {
             gameBox.ontouchstart = testBoxClick;
-        }else{
+        } else {
             gameBox.onclick = testBoxClick;
         }
     }, memoryTime);
